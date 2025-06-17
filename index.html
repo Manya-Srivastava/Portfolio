@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manya Srivastava | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/Screenshot 2025-06-17 at 14.55.28.png" class="logo" />
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Data Analyst | Aspiring Software Developer | ML Enthusiast</p>
+      <h1>Hi, I'm <span>Manya Srivastava</span><br>From Delhi,<br> India</h1>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/WhatsApp Image 2025-06-17 at 15.50.32.jpeg" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+            I am a high-spirited Computer Science Engineering student eager to leverage my foundational skills in
+            programming, data structures, and Data Analytics in a collaborative and innovative environment. Aspiring to
+            contribute to impactful projects while learning and growing as a software engineer. With a proven ability to quickly
+            learn and apply new technologies, I focus on fostering teamwork and delivering impactful results that have meaningful
+            impact.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Languages</span><br>Python, C++, Java, HTML, CSS, SQL</li>
+            <li><span>Libraries</span><br>NumPy, Pandas, Scikit-learn, Streamlit, Rasa</li>
+            <li><span>Tools</span><br>Git, VS Code, Jupyter, Postman, Kaggle</li>
+            <li><span>APIs</span><br>Google Maps API, OpenWeather API, REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2025</span><br>Project AnomAlert – Real-time industrial anomaly detection dashboard</li>
+            <li><span>2024</span><br>Margdarshak – Dynamic bus routing system for DTC</li>
+            <li><span>2023</span><br>Alteryx Process Automation Data Internship  </li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022–2026</span><br>GL Bajaj Institute of Technology and Management, CGPA: 8.68</li>
+            <li><span>2021–2022</span><br>Mahatma Hansraj Modern School, 12th: 91.4%</li>
+            <li><span>2019–2020</span><br>Mahatma Hansraj Modern School, 10th: 95% </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES / SKILLS -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Skills</h1>
+    <div class="services-list">
+      <div>
+        <i class="fas fa-brain"></i>
+        <h2>Machine Learning</h2>
+        <p>Trained models using Random Forest, Gradient Boosting, Isolation Forest. Deployed using Streamlit for real-time predictions.</p>
+      </div>
+      <div>
+        <i class="fas fa-route"></i>
+        <h2>APIs & Automation</h2>
+        <p>Integrated Google Maps and OpenWeather APIs for real-time routing, prediction and dynamic dashboard creation.</p>
+      </div>
+      <div>
+        <i class="fas fa-database"></i>
+        <h2>Backend & Data</h2>
+        <p>Experienced in PostgreSQL, MySQL and REST APIs for data integration, storage and analysis pipelines.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="work-list">
+        <div class="work">
+          <img src="images/Screenshot 2025-06-17 at 15.41.17.png" />
+          <div class="layer">
+            <h3>Margdarshak – DTC Bus Optimization</h3>
+            <p>Real-time dynamic bus routing system using ML (85% accuracy), Google Maps API & Dijkstra's algorithm.</p>
+            <a href="https://drive.google.com/file/d/1phNrG5EcYDZekv9NLt-EnaP6cxnNG-fG/view?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      
+        <div class="work">
+          <img src="images/Screenshot 2025-06-17 at 15.15.48.png" />
+          <div class="layer">
+            <h3>AnomAlert – Real-time Anomaly Detection</h3>
+            <p>Streamlit dashboard for industrial predictive maintenance using Isolation Forest & live sensor data.</p>
+            <a href="https://anomalert.streamlit.app/"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      
+        <div class="work">
+          <img src="images/Screenshot 2025-06-17 at 15.30.55.png" />
+          <div class="layer">
+            <h3>Museum Chatbot – Rasa NLP</h3>
+            <p>Interactive chatbot using Rasa NLU & Python for museum queries. Trained with custom intents, deployed on Streamlit.</p>
+            <a href="https://drive.google.com/file/d/1dnDARYSWqsoYWBH2gmCkzeoEFhtYXBUj/view?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <a href="https://drive.google.com/file/d/1v1PLbI9HHLb6Ngwfu5f74e6jH0GMXBF6/view?usp=sharing" class="btn">Research Work</a>
+    <a href="https://github.com/Manya-Srivastava" class="btn">See More on GitHub</a>
+  </div>
+</div>
+
+
+<section id="hackathons">
+    <div class="container">
+        <h2 class="sub-title">Hackathons Highlights</h2>
+        <div class="hackathon-list">
+            <div class="hackathon">
+                <h3>Hack JNU 3.0</h3>
+                <p>🏆 Winner | Developed Project Lifeline – an IoT + AI solution in detecting toxic gases for mine workers .</p>
+            </div>
+            <div class="hackathon">
+                <h3>Smart India Hackathon</h3>
+                <p>Top 5 Finalist in internal round  Developed a NLP based Chatbot for museum ticketing system.</p>
+            </div>
+            <div class="hackathon">
+                <h3>Impactathon Hackathon</h3>
+                <p>Finalist | Built a real time victim locator in disaster management.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> manyasrivastava0922@gmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> +91 7905069115</p>
+        <div class="social-icons">
+          <a href="https://github.com/Manya-Srivastava"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/manya-srivastava-51560a250"><i class="fab fa-linkedin"></i></a>
+          <a href="https://leetcode.com/u/manya_srivastava/"><i class="fas fa-code"></i></a>
+        </div>
+        <a href="MANYA SRIVASTAVA.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© Manya Srivastava | Built with 💻 by Easy Tutorials template</p>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  var sidemeu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemeu.style.right = "0";
+  }
+  function closemenu() {
+    sidemeu.style.right = "-200px";
+  }
+
+  const scriptURL = '<your Google Script URL>';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(() => (msg.innerHTML = ""), 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+</body>
+</html>
