@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/backgorund-Photoroom (1).png);
+    background-image: url(images/backgorund-Photoroom\ \(1\).png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -348,13 +348,14 @@ nav .fas{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
+        left: -200px;  /* ✅ Shift it off-screen to the LEFT */
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: left 0.5s;
     }
+
     nav ul li{
         display: block;
         margin: 25px;
